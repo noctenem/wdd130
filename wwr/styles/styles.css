@@ -5,6 +5,8 @@
   --accent2-color: #88d498;
   --accent3-color: #c6dabf;
   --rounded: 10px;
+  --heading-font: "Noto Sans", sans-serif;
+  --body-font: "Roboto", sans-serif;
 }
 
 * {
@@ -15,9 +17,13 @@
   border: none;
   text-decoration: none;
   color: var(--primary-color);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--body-font);
   font-weight: 300;
   font-style: normal;
+}
+
+body {
+  font-family: var(--body-font);
 }
 
 h1,
@@ -26,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--heading-font);
   font-weight: 500;
   font-style: normal;
   padding: 20px 0px;
