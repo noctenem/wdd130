@@ -90,6 +90,8 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10px;
+  padding: 0 50px;
 }
 
 .adventure div {
@@ -98,12 +100,17 @@ header nav ul li a:hover {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
 footer {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px 0px;
   font-size: 14px;
+  padding: 10px 80px;
+  margin-top: 10px;
 }
 
 footer nav {
