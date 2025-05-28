@@ -58,7 +58,7 @@ header {
   backdrop-filter: blur(6px);
 }
 
-header nav ul {
+header nav {
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -66,13 +66,14 @@ header nav ul {
   align-items: center;
 }
 
-header nav ul li a {
+header nav a {
   padding: 0 10px;
   height: 100%;
   color: var(--accent2-color);
+  line-height: 50px;
 }
 
-header nav ul li a:hover {
+header nav a:hover {
   color: var(--accent1-color);
 }
 
