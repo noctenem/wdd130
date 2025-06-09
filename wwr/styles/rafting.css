@@ -71,7 +71,7 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-.content {
+.content, .content.home {
   width: 80vw;
   margin: auto;
   display: flex;
@@ -83,12 +83,19 @@ header nav a:hover {
 
 #history,
 #adventure,
-#employees {
+#employees,
+#descriptions {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px 0px;
   width: 100%;
+}
+
+#history h2,
+#adventure h2,
+#employees h2 {
+  margin:  20px 0px;
 }
 
 #adventure div,
@@ -100,6 +107,10 @@ header nav a:hover {
   align-items: center;
   text-align: center;
   gap: 0px 20px;
+}
+
+figure figcaption {
+  padding: 10px 0px;
 }
 
 textarea {
@@ -138,6 +149,36 @@ footer nav a * {
 
 /* END */
 
+/* HOME */
+#visitors {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#visitors a {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: var(--rounded);
+}
+
+.content.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 5rem;
+}
+
+.content.home #history {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+.content.home #history * {
+    color: var(--secondary-color);
+}
+
 /* ABOUT */
 .hero {
   height: 100vh;
@@ -154,6 +195,10 @@ footer nav a * {
 .hero h1 {
   color: var(--secondary-color);
   font-size: 60px;
+}
+
+.hero h3 {
+  color: var(--secondary-color);
 }
 
 .hero article {
@@ -187,6 +232,42 @@ footer nav a * {
   justify-content: space-around;
   align-items: center;
   gap: 0px 40px;
+}
+
+/* TRIPS */
+#descriptions div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#descriptions div .trip-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: center;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 /* CONTACT */
