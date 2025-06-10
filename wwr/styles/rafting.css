@@ -41,6 +41,8 @@ h6 {
   font-weight: 500;
 }
 
+b { font-weight: bold;}
+
 header {
   background-color: var(--primary-color);
   display: grid;
