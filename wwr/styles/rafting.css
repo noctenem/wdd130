@@ -104,6 +104,14 @@ header nav a:hover {
   gap: 0px 20px;
 }
 
+#adventure #adventure_home {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 0 20px;
+justify-content: center;
+align-items: center;
+}
+
 figure figcaption {
   padding: 10px 0px;
 }
